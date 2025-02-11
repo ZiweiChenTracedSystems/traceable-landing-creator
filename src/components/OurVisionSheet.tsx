@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import SheetBackButton from './shared/SheetBackButton';
@@ -39,6 +40,8 @@ const OurVisionSheet = ({ isOpen, onClose }: OurVisionSheetProps) => {
               </div>
             </div>
 
+            <KeyChallenges />
+
             {/* Making a Difference Section with Business Card Image */}
             <div className="relative h-[330px]">
               <img 
@@ -69,7 +72,6 @@ const OurVisionSheet = ({ isOpen, onClose }: OurVisionSheetProps) => {
               </div>
             </div>
 
-            <KeyChallenges />
             <SuccessSection />
             <div className="w-full">
               <AboutCTA onClose={onClose} />
